@@ -1,0 +1,43 @@
+<div class="search-input-container">
+  <input class="search-input" type="text" placeholder="Insert IP address... (e.g. 192.168.1.0)">
+  <button class="search-btn">SEARCH</button>
+</div>
+
+<style>
+  .search-input-container {
+    display: flex;
+    width: 50%;
+    margin: auto;
+  }
+
+  .search-input {
+    width: 100%;
+    display: block;
+    padding: 1rem 1.5rem;
+    font-size: 1.25rem;
+    font-family: VCR;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: var(--gray);
+    border: 2px solid var(--green);
+    border-right: none;
+  }
+
+  .search-input:focus {
+    outline: none;
+    background-color: #292929;
+    transition: .25s;
+  }
+
+  .search-btn {
+    color: #FFF;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 1.125rem;
+    font-family: VCR;
+    background-color: #555;
+    border: 2px solid var(--green);
+    border-left: none;
+    cursor: pointer;
+  }
+</style>

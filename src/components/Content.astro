@@ -1,0 +1,158 @@
+<section class="content hidden">
+  <article class="content-card content-data">
+    <h4 class="content-data-title">DATA</h4>
+    <ul class="content-data-text">
+      <!-- Testing layout -->
+      <li class="content-data-item">IP: <span>8.8.8.8</span></li>
+      <li class="content-data-item">Location: <span>US, California, Mountain View</span></li>
+      <li class="content-data-item">Name: <span>Google LLC</span></li>
+      <li class="content-data-item">Domain: <span>google.com</span></li>
+      <li class="content-data-item">Timezone: <span>12:00AM</span></li>
+      <li class="content-data-item">ISP: <span>Google LLC</span></li>
+    </ul>
+    <button class="content-data-btn">COPY TO CLIPBOARD</button>
+  </article>
+
+  <article class="content-map">
+    <!-- Testing Map Layout -->
+    <img class="content-map-img" src="/imgs/snazzy-image.png" alt="">
+  </article>
+
+  <article class="content-card content-history">
+    <h4 class="content-history-title">HISTORY</h4>
+    <ul class="content-history-list">
+      <!-- Testing Layout -->
+      <li class="content-history-item" tabindex="0">192.168.1.24</li>
+      <li class="content-history-item" tabindex="0">192.168.1.24</li>
+      <li class="content-history-item" tabindex="0">192.168.1.24</li>
+    </ul>
+  </article>
+  
+</section>
+
+<style>
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .content.hidden {
+    display: none;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 8px;
+  }
+
+  .content-card {
+    border: 2px solid var(--green);
+    min-height: 250px;
+    box-shadow: 9px 9px 0px var(--green), 10px 10px 0px #000;
+  }
+
+  .content-data {
+    width: 20%;
+  }
+
+  .content-history {
+    width: 20%;
+  }
+  
+  .content-data-title,
+  .content-history-title {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-block: 1.125rem;
+  }
+  
+  .content-history-list,
+  .content-data-text {
+    width: 90%;
+    max-height: 175px;
+    margin: 0 auto;
+    list-style: none;
+    padding: .5rem;
+  }
+
+  .content-history-list {
+    overflow-y: scroll;
+    max-height: 240px;
+  }
+
+  .content-history-list::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .content-history-list::-webkit-scrollbar-track {
+    background-color: #333;
+  }
+  
+  .content-history-list::-webkit-scrollbar-thumb {
+   background-color: #555;
+   border-radius: 12px;
+  }
+  
+  .content-history-item {
+    border: 1px solid #fff;
+    padding: .5rem;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .content-history-item:focus {
+    background-color: #5F5;
+    color: #000;
+    transition: .3s;
+    transform: scaleX(98%);
+  }
+
+  .content-data-item {
+    width: 90%;
+    margin: .75rem auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: .9rem;
+  }
+
+  .content-data-btn {
+    display: block;
+    margin: 2rem auto;
+    padding: .5rem;
+    background-color: var(--dark-gray);
+    border: 1px solid var(--green);
+    box-shadow: 4px 4px 0px var(--green), 5px 5px 0px #000;
+    font-family: VCR;
+    color: var(--text-clr);
+    cursor: pointer;
+  }
+
+  .content-map {
+    width: 50%;
+    height: 325px;
+    border: 8px solid #0005;
+    outline: 2px solid var(--green);
+  }
+
+  .content-map-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  span {
+    display: inline-block;
+    width: fit-content;
+    text-align: right;
+  }
+
+  .content-data-item:nth-child(2) span {
+    font-size: .8rem;
+  }
+</style>

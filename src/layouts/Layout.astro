@@ -2,7 +2,7 @@
 import Title from "../components/Title.astro"
 import Search from "../components/Search.astro"
 import Content from "../components/Content.astro"
-import Social from "../components/Social.astro"
+import "/src/general.css";
 ---
 
 <!doctype html>
@@ -14,10 +14,45 @@ import Social from "../components/Social.astro"
 		<meta name="generator" content={Astro.generator} />
 		<title>Ip Address Tracker</title>
 	</head>
-	<>
-		<Title />
-		<Search />
-		<Content />
-		<Social />
+	<body class="no-content">
+		<header>
+			<Title />
+		</header>
+		<main class="main-container">
+			<Search />
+			<Content />
+		</main>
+		<footer>
+			<a href="https://github.com/iamromaodev" class="footer-text">Made by Romaodev</a>
+		</footer>
 	</body>
 </html>
+
+
+<style>
+	body {
+		margin: 0;
+		background-color: var(--dark-gray);
+		color: var(--text-clr);
+		max-height: 100vh;
+		font-family: VCR;
+	}
+
+	body.no-content {
+		place-content: center;
+		height: 100vh;
+	}
+
+	body.no-content .main-container {
+		min-height: 200px;
+		place-content: center;
+	}
+
+	.footer-text {
+		display: block;
+		margin-top: 3rem;
+		text-align: center;
+		font-family: "Norican";
+		color: var(--text-clr);
+	}
+</style>

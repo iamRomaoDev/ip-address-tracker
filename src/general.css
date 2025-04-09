@@ -1,0 +1,20 @@
+:root {
+  /* Colors */
+  --dark-gray: #1d1d1d;
+  --gray: #303030;
+  --green: #48ff00;
+  --text-clr: #ffffff;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "Norican";
+  src: url("/fonts/Norican-Regular.woff2");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "VCR";
+  src: url("/fonts/VCR.woff2");
+  font-weight: 200;
+}
